@@ -4,6 +4,7 @@ import './index.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import BestSellers from './components/BestSellers';
+import Newsletter from './components/Newsletter';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
     <Header />
     <Banner />
     <BestSellers />
+    <Newsletter />
   </React.StrictMode>,
   document.getElementById('root')
 );

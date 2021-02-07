@@ -1,0 +1,47 @@
+.banner {
+    &{
+        position: relative;
+        // background-image: url("../assets/banner-principal.png");
+        background-color: #000;
+        height: 430px;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+    .text{
+        &{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #000;
+            height: 100%;
+            width: 40%;
+            max-width: 700px;
+        }
+        &::after{
+            content: "";
+            background-image: url("../assets/fundo-banner.png");
+            width: 100%;
+            height: 100%;
+            background-position: right;
+            position: absolute;
+            right: 55%;
+        }
+        p{
+            &{
+                z-index: 2;
+                margin: 0.5rem 0 0.5rem 5rem;
+                color: #fff;
+                font-size: 30px;
+            }
+            strong{
+                font-size: 45px;
+            }
+        }
+    }
+    img{
+        margin-left: auto;
+        width: 60%;
+    }
+}

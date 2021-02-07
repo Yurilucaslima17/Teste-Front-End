@@ -1,0 +1,21 @@
+.products{
+    &{
+        height: 350px;
+    }
+    img{
+        margin: auto;
+    }
+    .react-stars{
+        margin: auto;
+    }
+    p{
+        &{
+            margin: 0.5rem 0;
+            text-align: center;
+            min-height: 21px;
+        }
+        &.light-price{
+            font-weight: 300;
+        }
+    }
+}

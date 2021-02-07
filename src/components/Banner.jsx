@@ -1,5 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
+import bannerPrincipal from "../assets/banner-principal.png";
+import "../styles/banner.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Banner(){
 
@@ -28,7 +32,16 @@ export default function Banner(){
 
     return(
         <Slider {...settings}>
-            {repeater(arrayImg)}
+          <div>
+          <div className="banner">
+            <div className="text">
+              <p>Olá, o que você está buscando?</p>
+              <p><strong>Criar ou migrar seu e-commerce?</strong></p>
+            </div>
+            <img src={bannerPrincipal} alt=""/>
+          </div>
+          </div>
+            {/* {repeater(arrayImg)} */}
         </Slider>
     )
 }
