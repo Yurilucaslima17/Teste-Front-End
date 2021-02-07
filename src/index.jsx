@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import BestSellers from './components/BestSellers';
 import Newsletter from './components/Newsletter';
+import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <Banner />
     <BestSellers />
     <Newsletter />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

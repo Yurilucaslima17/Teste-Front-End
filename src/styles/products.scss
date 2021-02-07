@@ -1,9 +1,10 @@
 .products{
     &{
-        height: 350px;
+        min-height: 350px;
     }
     img{
         margin: auto;
+        max-height: 200px;
     }
     .react-stars{
         margin: auto;
@@ -16,6 +17,17 @@
         }
         &.light-price{
             font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .products{
+        &{
+
+        }
+        img{
+            max-height: 120px;
         }
     }
 }
