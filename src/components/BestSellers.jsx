@@ -4,6 +4,7 @@ import Product from "./Product";
 import {useState, useEffect} from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../styles/bestSellers.scss";
 
 export default function BestSellers(){
     const [products, setProducts] = useState([]);
@@ -45,10 +46,13 @@ export default function BestSellers(){
       };
 
     return(
-        <Slider {...settings}>
-            {products.map(element => {
-                return <Product {...element}/>
-            })}
-        </Slider>
+        <section className="best-sellers">
+            <h3>Mais Vendidos</h3>
+            <Slider {...settings} className="slider">
+                {products.map(element => {
+                    return <Product {...element}/>
+                })}
+            </Slider>
+        </section>
     )
 }

@@ -5,6 +5,7 @@
         align-items: center;
         justify-content: space-between;
         margin: 1rem auto;
+        padding: 0 1rem;
     }
     .mobile-menu{
         display: none;
@@ -26,6 +27,10 @@
     .menu-cart{
         span{
             margin-left: 0.5rem;
+            border-radius: 15px;
+            background-color: #F8475F;
+            color: #fff;
+            padding: 0 6px;
         }
     }
     .menu.menu-search{
@@ -47,6 +52,9 @@
             flex-grow: 1;
         }
     }
+    img{
+        height: 40px;
+    }
 }
 @media (max-width:600px){
     .header{
@@ -54,21 +62,39 @@
         .mobile-menu{
             display: block;
             position: relative;
+            margin-left: 1rem;
+        }
+        .menu + .menu{
+            margin-left: 0;
         }
         .menu-profile{
             &{
                 visibility: hidden;
                 opacity: 0;
+                top: 45px;
                 position: absolute;
                 background-color: rgba(#000, 0.8);
+                color: #fff;
                 transition: ease opacity 0.5s;
                 z-index: 999;
+                padding: 0 1rem;
             }
             &.active{
                 opacity: 1;
                 visibility: visible;
                 transition: ease opacity 0.5s;
             }
+        }
+        .menu-cart{
+            &{
+                order: 2;
+                margin: 0 1rem;
+            }
+        }
+        .menu.menu-search{
+            order: 3;
+            margin: 1rem;
+            margin-left: 1rem;
         }
     }
 }

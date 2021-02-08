@@ -21,14 +21,19 @@
             }
             .title{
                 &{
-
+                    position: relative;
                 }
                 &::after{
                     content: "";
-                    height: 1px;
-                    width: 10px;
-                    background-color: #fff;
+                    border-bottom: 5px solid #fff;
+                    position: absolute;
+                    width: 50px;
+                    left: 0;
+                    bottom: -10px;
                 }
+            }
+            a{
+                color: #fff;
             }
         }
         .buttons{
@@ -38,14 +43,16 @@
             }
             button {
                 &{
-                background-color: #fff;
-                color: #000;
-                width: 200px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin: 0.5rem 0;
+                    background-color: #fff;
+                    color: #000;
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+                    cursor: pointer;
+                    border-radius: 5px;
                 }
                 svg{
                     height: 25px;
